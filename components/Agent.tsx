@@ -20,7 +20,7 @@ interface SavedMessage {
 }
 
 
-const Agent = ({ userName, userId, type, questions }: AgentProps) => {
+const Agent = ({ userName, userId, type, questions, interviewId }: AgentProps) => {
 
     const router = useRouter();
     const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
@@ -75,7 +75,15 @@ const Agent = ({ userName, userId, type, questions }: AgentProps) => {
     }, []);
 
     useEffect(() => {
-        if (callStatus === CallStatus.FINISHED) router.push('/');
+
+        if (callStatus === CallStatus.FINISHED)
+        {
+            if (type === "generate"){
+                router.push('/');
+            } else {
+                handleGenerateFeedback(messages;
+            }
+        }
     }, [messages, callStatus, type, userId]);
 
     const handleCall = async () => {
