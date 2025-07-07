@@ -24,8 +24,9 @@
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+6. 🔗 [Demo](#demo)
+7. 🚀 [About Me](#about)
+7. 💁‍♂️ [Support Me](#support)
 
 
 
